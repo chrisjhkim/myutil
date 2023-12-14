@@ -19,4 +19,6 @@ public class LogFile {
 		lines.addAll(file2.getLogLines());
 		return new LogFile(lines);
 	}
+
+
 }

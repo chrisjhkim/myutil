@@ -50,6 +50,8 @@ public class LogFileReader {
 				lineBuilder.append("\n");
 
 			}
+			if ( lineBuilder.hasText() )
+				lines.add(lineBuilder.build());
 
 			return new LogFile(lines);
 		} catch (IOException e) {
